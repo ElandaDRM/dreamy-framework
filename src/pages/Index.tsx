@@ -1,13 +1,28 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+
+import MainLayout from "../components/MainLayout";
 
 const Index = () => {
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gray-100">
-      <div className="text-center">
-        <h1 className="text-4xl font-bold mb-4">Welcome to Your Blank App</h1>
-        <p className="text-xl text-gray-600">Start building your amazing project here!</p>
+    <MainLayout>
+      <div className="space-y-6">
+        <div>
+          <span className="bg-white/10 text-sm px-3 py-1 rounded-full">欢迎</span>
+          <h1 className="text-4xl font-bold mt-2">Minecraft 启动器</h1>
+        </div>
+        
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <div className="glass-panel rounded-xl p-6 space-y-4">
+            <h2 className="text-2xl font-semibold">最近游戏</h2>
+            <p className="text-zinc-400">没有最近的游戏记录</p>
+          </div>
+          
+          <div className="glass-panel rounded-xl p-6 space-y-4">
+            <h2 className="text-2xl font-semibold">游戏新闻</h2>
+            <p className="text-zinc-400">正在加载新闻...</p>
+          </div>
+        </div>
       </div>
-    </div>
+    </MainLayout>
   );
 };
 
