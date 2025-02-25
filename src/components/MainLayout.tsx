@@ -30,12 +30,12 @@ const MainLayout = ({ children }: MainLayoutProps) => {
       }}
     >
       {/* Title Bar */}
-      <div className="mb-6 rounded-lg p-3 flex items-center justify-between bg-[#25262B]">
+      <div className="mb-6 rounded-lg p-3 flex items-center justify-between bg-black/30 backdrop-blur-xl">
         <div className="flex items-center gap-3">
           <img 
             src="/lovable-uploads/f4cc83c8-6d3d-4174-aa56-562cc5bc775a.png" 
             alt="Logo" 
-            className="h-8 w-8"
+            className="h-10 w-10"
           />
           <h1 className="text-lg font-medium">Rhythmic Tool Launcher</h1>
         </div>
